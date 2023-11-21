@@ -1,0 +1,47 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
+
+img{
+ /* On met en place le fond d'écran */
+ min-height: 100%;
+ min-width: 1024px;
+ /* On indique un redimensionnement proportionnel */
+ width: 100%;
+ height: auto;
+ /* L'image est positionnée en haut à gauche */
+ position: fixed;
+ top: 0;
+ left: 0;
+}
+@media screen and (max-width: 1024px) { /* Le traitement est ici spécifique à l'image */
+ img.fondecran {
+ left: 50%;
+ margin-left: -512px; /* 50% */
+ }
+}
+.texte_centrer {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+button {
+  display: block;
+  background-color: none;
+  border-radius: 10px;
+  border: 4px double none;
+  border-color: none;
+  color: #041464;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 250px;
+  -webkit-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+span{
+  color: red;
+}
